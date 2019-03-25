@@ -25,8 +25,6 @@ I took more than a few liberties with the above.  There was a question in my min
 minimum to satisfy the requirements, or should I take it more seriously. I opted for the latter. which has taken some time.  The idea
 is to give the interviewer a better idea of my knowlege and capabilities.
 
-Note that you can open as many CLI and/or Web consoles as you like, if you want to play with running concurrent sessions.
-
 ## The Basic Architecture
 
 The runtime environment consists of five major components:
@@ -50,6 +48,8 @@ be in posessions of login credentials.
 5) AcountsWeb is the browser client for AccountsAPI. It uses the Hybrid flow, so it is *never* in possession of any users's
 credentials.  On the other hand, it involves browsers, so it has potential vulnerabilites to XSS and all the other gremlins
 of browser-based applications.
+
+Note that you can open as many CLI and/or Web consoles as you like, if you want to play with running concurrent sessions.
 
 ## How to Get Started
 
