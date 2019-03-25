@@ -56,8 +56,19 @@ Note that you can open as many CLI and/or Web consoles as you like, if you want 
 First, of course, clone this repo to your local environment.
 
 This initial push contains all of the parts, but only the command line client is functional.  The easiest way to launch all the parts is
-to just load the solution in VS 2017 and click the green "run" arrow.  The debug solution is already configured to launch everything.
-Doing this will automatically launch the Identity Service, Web and CLI clients, and the Accounts API.  Stick to debug here; trying to
+to just load the solution in VS 2017 and click the green "run" arrow but, due to the fact that the repository does not store the .suo file for this solution, you will need to configure the startup first:
+
+1) Make sure the build configuration is "Debug".
+2) Right-click the *Solution 'AltSourceAccounts'* entry at the top of the Solution Explorer.
+3) Select "Properties" from very bottom the resulting menu.
+4) Select Common Properties -> Startup Project.
+5) Click the "Multiple startup projects" radio button.
+6) Confgure IdentityServer, AccountsApi, AccountsWeb and Accounts Cli to "Start", in that order.  Leave everything else set to "None".
+7) Click the "OK" button to save the changes.
+
+At this point, the startup project (to the left of the green "Start" arrow in the toolbar) should say <Multiple Startup Projects>".
+
+The debug solution is now configured to launch everything.  Clicking the "Start" button in the toolbar will automatically launch the Identity Service, Web and CLI clients, and the Accounts API.  Stick to debug here; trying toE:\Dev\Web\AltSourceAccounts
 run in release mode will likely just get you tangled up in HTTPS issues. I haven't made any attempt to configure a release build.
 
 At this point, you should have one browser tab open to the login screen of the Web Client, and two CLI windows.  One is the log
