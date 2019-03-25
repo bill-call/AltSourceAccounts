@@ -68,8 +68,7 @@ to just load the solution in VS 2017 and click the green "run" arrow but, due to
 
 At this point, the startup project (to the left of the green "Start" arrow in the toolbar) should say <Multiple Startup Projects>".
 
-The debug solution is now configured to launch everything.  Clicking the "Start" button in the toolbar will automatically launch the Identity Service, Web and CLI clients, and the Accounts API.  Stick to debug here; trying toE:\Dev\Web\AltSourceAccounts
-run in release mode will likely just get you tangled up in HTTPS issues. I haven't made any attempt to configure a release build.
+The debug solution is now configured to launch everything.  Clicking the "Start" button in the toolbar will automatically launch the Identity Service, Web and CLI clients, and the Accounts API.  Stick to debug here; trying to run in release mode will likely just get you tangled up in HTTPS issues. I haven't made any attempt to configure a release build.
 
 At this point, you should have one browser tab open to the login screen of the Web Client, and two CLI windows.  One is the log
 console for the Identity Server (that's the one that tells you to press CTRL-C to close it).  The other window is the CLI client
