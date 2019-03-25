@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountsLib", "AccountsLib\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountsLibTests", "AccountsLibTests\AccountsLibTests.csproj", "{680BC6AD-F9CD-4945-8F42-A65875C59F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{91EB7050-DC11-43D8-AA8A-8EB956533651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{91EB7050-DC11-43D8-AA8A-8EB956533651}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
