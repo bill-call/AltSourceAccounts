@@ -1,0 +1,282 @@
+﻿2019-03-24 19:00:59.146 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:00:59.301 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:01:07.213 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:01:49.304 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:01:49.311 -05:00 [Information] AuthenticationScheme: "Bearer" was forbidden.
+2019-03-24 19:02:01.479 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:02:24.614 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:02:32.193 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:02:39.991 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:16:04.461 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:16:04.625 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:16:24.369 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:17:09.543 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:17:33.034 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:18:00.528 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:18:30.193 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:18:36.399 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:19:24.587 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:19:27.006 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:20:41.372 -05:00 [Information] Successfully validated the token.
+2019-03-24 19:20:41.607 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 985
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 127
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-24 19:20:50.362 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:17:12.882 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:17:13.034 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:17:27.075 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:18:11.901 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:18:33.665 -05:00 [Information] Successfully validated the token.
+2019-03-25 00:18:33.884 -05:00 [Error] An unhandled exception has occurred while executing the request.
+Common.UserInputValidationException: The provided input is not legal. A valid memo must be no more than 64 characters in length and contain only numbers, letters, spaces, and the characters  . , ! ? - _ & $ # @ * : ' ~..
+   at Common.UserInputValidation.Validate(String input, Regex pattern, String helpText) in E:\Dev\Web\AltSourceAccounts\Common\UserInputValidation.cs:line 89
+   at Common.UserInputValidation.ValidateMemo(String input) in E:\Dev\Web\AltSourceAccounts\Common\UserInputValidation.cs:line 76
+   at AccountsApi.Controllers.AccountsController.Credit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 87
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 00:18:47.042 -05:00 [Information] Successfully validated the token.
+2019-03-25 03:31:15.391 -05:00 [Information] Successfully validated the token.
+2019-03-25 03:31:15.564 -05:00 [Information] Successfully validated the token.
+2019-03-25 03:31:28.010 -05:00 [Information] Successfully validated the token.
+2019-03-25 03:31:45.874 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:23:54.333 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:23:54.508 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:24:03.272 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:24:25.984 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:24:44.689 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:25:22.529 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:25:32.025 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:25:32.241 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.InvalidRequestException: Bad request
+   at AccountsLib.Logic.GetBalance(Session session, String accountNumber) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1231
+   at AccountsApi.Controllers.AccountsController.GetBalance(String accountNumber) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 39
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 05:25:35.196 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:25:35.399 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.InvalidRequestException: Bad request
+   at AccountsLib.Logic.GetBalance(Session session, String accountNumber) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1231
+   at AccountsApi.Controllers.AccountsController.GetBalance(String accountNumber) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 39
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 05:25:40.237 -05:00 [Information] Successfully validated the token.
+2019-03-25 05:25:49.290 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:20:26.659 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:20:26.845 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:20:52.701 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:21:16.076 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:21:16.296 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1182
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 128
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 06:23:08.607 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:23:08.771 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1182
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 128
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 06:23:49.044 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:23:49.205 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1182
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 128
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 06:24:07.521 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:24:07.711 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1182
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 128
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 06:24:41.758 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:24:41.927 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.OverdraftException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsLib.Logic.ExecuteTransaction(Session session, String accountNumber, ETransactionType transactionType, Double amount, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1182
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 128
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 06:50:10.581 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:50:10.753 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:50:20.535 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:50:39.507 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:51:09.888 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:53:26.531 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:53:26.698 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:53:31.442 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:53:56.338 -05:00 [Information] Successfully validated the token.
+2019-03-25 06:54:31.499 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:03:11.474 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:03:11.645 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:03:26.770 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:04:08.640 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:04:08.877 -05:00 [Error] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Debit against account 'A00002' failed due to insufficient funds
+   at AccountsApi.Controllers.AccountsController.Debit(String accountNumber, Double sum, String memo) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AccountsController.cs:line 140
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 07:09:08.184 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:09:08.378 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:09:12.025 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:09:30.335 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:23:16.428 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:23:16.608 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:23:25.625 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:23:51.438 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:37:56.105 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:37:56.259 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:38:05.865 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:38:55.884 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:39:07.691 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:48:54.180 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:48:54.335 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:48:58.363 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:49:20.238 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:50:30.456 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:51:25.929 -05:00 [Information] Successfully validated the token.
+2019-03-25 07:51:26.139 -05:00 [Error] An unhandled exception has occurred while executing the request.
+AccountsLib.InvalidRequestException: Bad Request
+   at AccountsLib.Logic.CreateAccount(Session session, String clientId) in E:\Dev\Web\AltSourceAccounts\AccountsLib\Account.cs:line 1063
+   at AccountsApi.Controllers.AdminController.Create(String clientId) in E:\Dev\Web\AltSourceAccounts\AccountsApi\Controllers\AdminController.cs:line 32
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-25 08:25:59.094 -05:00 [Information] Successfully validated the token.
+2019-03-25 08:25:59.274 -05:00 [Information] Successfully validated the token.
