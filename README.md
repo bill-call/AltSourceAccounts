@@ -25,6 +25,8 @@ I took more than a few liberties with the above.  There was a question in my min
 minimum to satisfy the requirements, or should I take it more seriously. I opted for the latter. which has taken some time.  The idea
 is to give the interviewer a better idea of my knowlege and capabilities.
 
+Note that you can open as many CLI and/or Web consoles as you like, if you want to play with running concurrent sessions.
+
 ## The Basic Architecture
 
 The runtime environment consists of five major components:
